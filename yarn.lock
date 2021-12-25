@@ -5181,6 +5181,13 @@ gatsby-plugin-image@^2.2.0:
     objectFitPolyfill "^2.3.5"
     prop-types "^15.7.2"
 
+gatsby-plugin-layout@^3.4.0:
+  version "3.4.0"
+  resolved "https://nexus.devfactory.com/repository/jive-npm-public/gatsby-plugin-layout/-/gatsby-plugin-layout-3.4.0.tgz#c3c7d4178991fb1cf34a7f28c55ad76c19ae9b4d"
+  integrity sha512-YmcAW/RW/at+FugyOY1FzSfl0SMg+VZgYE80McOcf2uBwPiMYqMLz9UGHU/qObVcNYDe8tJ7ifVrAjJDWUkACA==
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+
 gatsby-plugin-manifest@^4.2.0:
   version "4.4.0"
   resolved "https://nexus.devfactory.com/repository/jive-npm-public/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.4.0.tgz#c27a6d63a5c74a117f8099dac4c6df324e4a605c"

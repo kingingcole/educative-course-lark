@@ -1,8 +1,6 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import PostCard from "../components/postCard"
-
-import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const dummyPosts = [
@@ -41,7 +39,7 @@ const IndexPage = () => {
   const dummyImageData = data.file.childImageSharp.fluid
 
   return (
-    <Layout>
+    <>
       <Seo title="Home" />
       <div>
         {dummyPosts.map(post => {
@@ -56,7 +54,7 @@ const IndexPage = () => {
           )
         })}
       </div>
-    </Layout>
+    </>
   )
 }
 
