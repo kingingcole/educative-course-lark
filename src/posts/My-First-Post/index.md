@@ -6,4 +6,4 @@ description: This is our first ever blog post item
 altText: a picture of the ocean
 ---
 
-This is the body of our blog post. This is an inline image ![https://placedog.net/500/300](image.png)
+This is the body of our blog post. This is an inline image ![a cute dog](https://placedog.net/500/300)
