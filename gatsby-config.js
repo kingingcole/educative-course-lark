@@ -12,6 +12,13 @@ module.exports = {
     }
   },
   plugins: [
+    // `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        excludes: ["/post/a-fourth-post-in-the-works"]
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {

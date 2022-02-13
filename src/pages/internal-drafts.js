@@ -5,11 +5,11 @@ import Seo from "../components/seo"
 import slugify from "slugify"
 
 
-const IndexPage = ({ data }) => {
+const DraftsPage = ({ data }) => {
 
   return (
     <>
-      <Seo title="Home" />
+      <Seo title="Internal Drafts" />
       <div>
         {data.allMarkdownRemark.edges.map(({ node }) => {
           const { title, date, altText, featuredImage } = node.frontmatter
@@ -31,10 +31,10 @@ const IndexPage = ({ data }) => {
 }
 
 export const blogPostsQuery = graphql`
-query BlogPosts {
+query DraftBlogPosts {
   allMarkdownRemark(
     sort: {fields: frontmatter___date, order: DESC}
-    filter: {frontmatter: {status: {ne: "draft"}}}
+    filter: {frontmatter: {status: {eq: "draft"}}}
   ) {
     edges {
       node {
@@ -57,4 +57,4 @@ query BlogPosts {
   
 `
 
-export default IndexPage
+export default DraftsPage
