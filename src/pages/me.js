@@ -24,7 +24,7 @@ const Me = () => {
             <h2>Static Image</h2>
             <div>
                 <h3>Using local file</h3>
-                <StaticImage src="../images/spiderman.jpg" width={400} height={400} alt='Spiderman'/>
+                <StaticImage src="../images/super-hero.png" width={400} height={400} alt='Super hero'/>
             </div>
             <br />
 
